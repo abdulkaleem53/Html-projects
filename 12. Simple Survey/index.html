@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Survey</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="male"><input id="male" type="radio" name="male-female" value="male" checked>Male</label>
+
+            <label for="female"><input type="radio" name="male-female" id="femela" value="female" checked>Female</label>
+        </fieldset>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

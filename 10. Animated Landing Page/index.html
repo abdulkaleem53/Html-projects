@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: rgb(1, 16, 16);
+        }
+        h1 {
+            color: #FFC107;
+        }
+
+        h2{
+            color: #DC3545;
+        }
+
+        p {
+            color: #6C757D;
+            font-size: 18px;
+        }
+
+
+        .animated-text {
+            display: inline-block;
+            animation: colorChange 4s infinite;
+        }
+        @keyframes colorChange {
+            25%, 100% {
+                color: #15f327;
+            }
+            10%, 50%{
+                color: #5018f7;
+            }
+            50%, 100%{
+                color: rgb(244, 7, 173);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>Explore the <span class="animated-text">amazing</span> content we have for you!</p>
+    
+    <h2><span class="animated-text"> Welcome to My Second Website</span></h2>
+    <p>See the my web site name is in animated <span class="animated-text">Abdul kaleem</span> </p>
+</body>
+</html>
